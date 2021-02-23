@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    background-color: rgb(70, 70, 70);
+    color: rgb(230, 230, 230);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+        "header header"
+        "side section1"
+        "side section2"
+        "footer footer";
+    position: relative;
+}
+
+header {
+    grid-area: header;
+    background-color: #111;
+    text-align: center;
+    margin: 0em;
+    padding: 0em;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 0em;
+    margin: 1em;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111
+}
+
+header li {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+}
+
+header li:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+h2 {
+    text-align: center;
+    padding: .5em;
+}
+
+div.contact {
+    display: flex;
+    justify-content: center;
+}
+
+div.contact p {
+    padding: 1em;
+    margin: 1em;
+    border: 1em solid;
+    border-radius: 10%;
+}
+
+img {
+    max-width: 100% ;
+    float: left;
+    background-color: white;
+}
+
+div.exp {
+    grid-area: section1;
+    margin: 0;
+    background-color: rgb(70, 70, 70);
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+div.edu {
+    grid-area: section2;
+    margin: 0;
+    background-color: rgb(70, 70, 70);
+    padding-left: 3em;
+    padding-bottom: 3em;
+    padding-right: 3em;
+}
+
+aside {
+    grid-area: side;
+    padding: 0em;
+    margin: 0em;
+    background-color: #111;
+    text-align: center;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+}
+
+aside a {
+    color: white;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-decoration: none;
+}
+
+aside a:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+aside a:active {
+    background-color: rgb(100, 100, 100);
+}
+
+div.sum {
+    grid-area: footer;
+    margin: 0;
+    background-color: #111;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+span.date {
+    float: right;
+}
