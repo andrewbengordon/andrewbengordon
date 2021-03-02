@@ -3,17 +3,19 @@ body {
     background-color: rgb(70, 70, 70);
     color: rgb(230, 230, 230);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
 }
 
 #container {
     display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 20% auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
     grid-template-areas:
-        "header header"
-        "side section1"
-        "side section2"
-        "footer footer";
+        "header"
+        "side"
+        "section1"
+        "section2"
+        "footer";
     position: relative;
 }
 
@@ -52,9 +54,27 @@ header li:hover {
     background-color: rgb(70, 70, 70);
 }
 
+ul {
+    margin: 0em;
+    padding: 0em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+li {
+    margin: 0em;
+    padding: 0em;
+}
+
 h2 {
     text-align: center;
     padding: .5em;
+    font-size: xx-large;
+}
+
+h3 {
+    font-size: large;
+    padding: 0em;
 }
 
 div.contact {
@@ -79,10 +99,9 @@ div.exp {
     grid-area: section1;
     margin: 0;
     background-color: rgb(70, 70, 70);
-    padding-top: .5em;
-    padding-bottom: .5em;
     padding-left: 3em;
     padding-right: 3em;
+    padding-bottom: 0em;
 }
 
 div.edu {
@@ -100,7 +119,6 @@ aside {
     margin: 0em;
     background-color: #111;
     text-align: center;
-    font-size: x-large;
     display: flex;
     flex-direction: column;
 }
@@ -110,6 +128,7 @@ aside a {
     padding-bottom: 1em;
     padding-top: 1em;
     text-decoration: none;
+    font-size: x-large;
 }
 
 aside a:hover {
@@ -122,14 +141,41 @@ aside a:active {
 
 div.sum {
     grid-area: footer;
-    margin: 0;
     background-color: #111;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    margin: 0em;
+    text-align: justify;
 }
 
 span.date {
-    float: right;
+    float: none;
+    display: block;
+    font-size: small;
+}
+
+@media screen and (min-width: 750px) {
+    #container {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 20% auto;
+        grid-template-areas:
+            "header header"
+            "side section1"
+            "side section2"
+            "footer footer";
+        position: relative;
+    }
+    div.sum {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    span.date {
+        font-size: large;
+        float: right;
+    }
 }
