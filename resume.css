@@ -50,10 +50,6 @@ header li {
     text-decoration: none;
 }
 
-header li:hover {
-    background-color: rgb(70, 70, 70);
-}
-
 ul {
     margin: 0em;
     padding: 0em;
@@ -170,6 +166,9 @@ span.date {
     div.sum {
         padding-left: 5em;
         padding-right: 5em;
+    }
+    header li:hover {
+        background-color: rgb(70, 70, 70);
     }
 }
 
