@@ -1,150 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is my resume. I'm doing it for a web development class and I want a good score">
-    <title>Resume - Andrew Gordon</title>
-    <link rel="stylesheet" href="resume.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@next"></script>
+  <link href="personal.css" rel="stylesheet" />
+  <script src="personal.js"></script>
+  <script src="trivia.js"></script>
+  <title>Drew Gordon</title>
 </head>
+
 <body>
-    <div id="container">
-        <header>
-            <h1>Andrew Gordon</h1>
-            <ul>
-                <li>190 East 400 South, Ephraim, UT 84627</li>
-                <li>Phone: 435-609-3145</li>
-            </ul>
-        </header>
+  <div class="topnav" id="myTopnav">
+    <a href="mailto: andrewbengordon@gmail.com">Contact Me</a>
+    <a href="https://www.redbubble.com/people/andrewbengordon/shop">Shop</a>
+    <a href="https://www.soundcloud.com/demomusic801">SoundCloud</a>
+    <a href="https://www.twitch.tv/demomusic801">Twitch</a>
+    <a href="javascript:void(0);" class="icon" onclick="navbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
-        <div class="exp">
-            <h2>Experience</h2>
-            <h3>
-                <span>Salesman, Bicycle Mechanic, Pipe Dream Adventure Sports</span>
-                <span class="date">September 2013 - May 2015</span>
-            </h3>
-            <ul>
-                <li>
-                    Sold customers products, solved customers product issues,
-                    communicated with customers about complaints and addressed questions,
-                    processed payments, issued returns and exchanges, worked with financial information systems,
-                    filled out invoices.
-                </li>
-                <li>
-                    Repaired and tuned bicycles, performed general store maintenance,
-                    cleaned bathrooms and maintenance rooms.
-                </li>
-                <li>
-                    Installed surveillance system, installed point of sale and other software on store computers,
-                    created advertisements and managed social media.
-                </li>
-            </ul>
-            <h3>
-                <span>Bank Teller, Mountain America Credit Union</span>
-                <span class="date">October 2015 - April 2016</span>
-            </h3>
-            <ul>
-                <li>
-                    Processed transactions, sold products and services, helped customers with complaints and issues.
-                </li>
-                <li>
-                    Worked with cash, checks and sensitive documents, ensured discretion and accuracy when handling
-                    important information.
-                </li>
-                <li>
-                    Learned and improved customer service skills through many interactions with different people in
-                    different circumstances.
-                </li>
-            </ul>
-            <h3>
-                <span>Communications Technician, Comcast</span>
-                <span class="date">June 2016 - September 2017</span>
-            </h3>
-            <ul>
-                <li>
-                    Worked directly with customers, addressing complaints and resolving issues, ensuring problems
-                    were resolved in a timely matter
-                </li>
-                <li>
-                    Installed and maintained communication services for customers and businesses, such as Internet,
-                    television, digital phone, and security systems.
-                </li>
-            </ul>
-            <h3>
-                <span>Lead Lift Operator, Park City Mountain Resort</span>
-                <span class="date">September 2017 – April 2018</span>
-            </h3>
-            <ul>
-                <li>
-                    Operated ski lifts, maintained loading areas, fixed lift related issues.
-                </li>
-                <li>
-                    Interacted with guests, addressed questions and concerns, responsible for guest safety.
-                </li>
-                <li>
-                    Led a team of operators to ensure tasks were completed safely and efficiently, worked with operators
-                    to maintain a hospitable work environment
-                </li>
-            </ul>
-            <h3>
-                <span>Construction Worker, Gordon Custom Building</span>
-                <span class="date">April 2018 – Present</span>
-            </h3>
-            <ul>
-                <li>
-                    Reviewed plans, scaled numbers and measurements for houses and commercial buildings.
-                </li>
-                <li>
-                    Constructed buildings with many different materials such as concrete, lumber and steel, installed
-                    drywall, painted rooms.
-                </li>
-                <li>
-                    Gained experience in practical math, used many different tools to create solutions.
-                </li>
-            </ul>
-        </div>
-
-        <div class="edu">
-            <h2>Education</h2>
-            <h3>
-                <span>Manti High School</span>
-                <span class="date">August 2010 - May 2014</span>
-            </h3>
-            <ul>
-                <li>
-                    Graduate, High Honor Roll, Student Government, Class of 2014
-                </li>
-            </ul>
-            <h3>
-                <span>Snow College</span>
-                <span class="date">August 2019 - Present</span>
-            </h3>
-            <ul>
-                <li>
-                    Full Time Student, Academic Excellence, 71 earned credits, Software Engineering Major
-                </li>
-            </ul>
-        </div>
-
-        <aside>
-            <img src="images/IMG_2403.jpg" alt="Self Portrait">
-            <a href="mailto:andrewbengordon@gmail.com">E-Mail Me</a>
-            <a href="https://www.soundcloud.com/demomusic801">SoundCloud</a>
-            <a href="https://www.redbubble.com/people/andrewbengordon">Store</a>
-        </aside>
-
-        <div class="sum">
-            <h2>Summary</h2>
-            <p>
-                Most of my job experience comes from customer service, hard work, and problem solving. Previous jobs have
-                given me the opportunity to work with a variety of people in very different circumstances. This has
-                given me great people skills and I have learned to work effectively. I also have performed many
-                difficult tasks that have taught me how to work hard and to not stop until the job is done. As an
-                employee that has carried many positions throughout companies, I do well to adapt to different jobs
-                and situations to make things work smoothly, efficiently, as well as enjoyable for me and the rest
-                of my team.
-            </p>
-        </div>
-
+  <div id="container"></div>
+    <div class="title">
+      <img src="self.jpg" alt="a photo of me">
+      <h2>Drew Gordon</h2>
+      <h3>Engineer, Developer, Artist</h3>
     </div>
+
+    <div id="container">
+    <main class="main">
+      <p id="AboutMe">
+        My name is Drew. I am a student currently attending Snow College. My major is Software Engineering
+        with an emphasis in web development. I enjoy skiing, skateboarding, mountain biking, and gaming in
+        my free time. I like being outside just as much as I like being inside.
+      </p>
+      <p id="Experience">
+        My experience is mostly projects that I have worked on inside and outside of school. I currently work
+        for the school's IT department, which has given me a lot of experience in hardware as well as software
+        in practice. I find that the more I code and work on projects, the more I find myself enjoying it.
+        <br><br>
+        I am proficient in a few major programming languages, as well as design languages. These include:
+        <br><br>
+        Programming Languages:
+        <br><br>
+        &#8226;&nbspC++
+        <br>
+        &#8226;&nbspC#
+        <br>
+        &#8226;&nbspJava
+        <br>
+        &#8226;&nbspJavascript
+        <br>
+        &#8226;&nbspMIPS Assembly
+        <br><br>
+        Design Languages:
+        <br><br>
+        &#8226;&nbspHTML
+        <br>
+        &#8226;&nbspCSS 
+        <br>
+        &#8226;&nbspVerilog
+        <br>
+      </p>
+      <p id="Education">
+        So far, my higher eduction has been exclusively at Snow College. I have studied business for a few 
+        years until I decided to study software engineering. So far the classes I've taken have covered: web
+        development, data structures, general algorithms, digital circuits, and computer architecture.
+        <br><br>
+        I have found these subjects to be quite interesting and I look forward to studying them further.
+      </p>
+      <p id="Portfolio">
+        <img src="badger.png" alt="modified badger logo">
+        <img src="circuit.jpg" alt= "a tree made of circuits">
+        <img src="ho99o9.jpg" alt= "a collage i made for a band">
+        <img src="mountains.jpg" alt= "stylized mountains">
+        <img src="outrun.jpg" alt= "80s trees and gradient">
+        <img src="yeezus.jpg" alt="stylized photo of kanye west">
+      </p>
+
+      <p id = "Projects">
+          <div style="display: none;" class ="container m-1" id="app">
+            <div class="row" id="input">
+              <h1>Ski Sizer</h1>
+              <p>
+                This tool is intended to give an approximate range for your ski length based on
+                your height. Please provide your skill level and height below.
+              </p>
+              <select class="form-select w-auto m-2" v-model="selected">
+                  <option disabled value="">Please select one</option>
+                  <option value="1">Beginner</option>
+                  <option value="2">Intermediate</option>
+                  <option value="3">Advanced</option>
+              </select>
+              <div class="w-100"></div>
+              <input class="col-sm-2 m-2" :placeholder="placeholder" v-model="skier"/>
+              <div class="w-100"></div>
+              <button v-if="(selected == 1)" type="button" class="col-sm-2 col-1 btn btn-primary btn-lg" v-on:click="begSkiSize()">Calculate</button>
+              <button v-if="(selected == 2)" type="button" class="col-sm-2 col-1 btn btn-primary btn-lg" v-on:click="intSkiSize()">Calculate</button>
+              <button v-if="(selected == 3)" type="button" class="col-sm-2 col-1 btn btn-primary btn-lg" v-on:click="advSkiSize()">Calculate</button>
+            </div>
+            <div class="row"></div>
+            <div class="row" id="output">
+              <h4 class="text-start">Ski Min: {{ skiMin }} cm</h2>
+              <h4 class="text-start">Ski Max: {{ skiMax }} cm</h2>
+            </div>
+            <script src="skisize.js"></script>
+          </div>
+      </p>
+      <p id="Trivia">
+        <script>trivia();</script>
+        <div id="Question"></div>
+        <div id="Answer"></div>
+        <button id= "True" onclick="showAnswer()">True</button>
+        <button id= "False" onclick="showAnswer()">False</button>
+      </p>
+    </main>
+
+    <aside class="aside">
+      <ul>
+        <li><button class="nav-item" id="AboutMeButton" onmouseenter="mouseOver('AboutMeButton')"
+            onclick="showHide('AboutMe'); hideTrueFalse(); activeButton('AboutMeButton');">About Me</button></li>
+        <li><button class="nav-item" id="ExperienceButton" onmouseenter="mouseOver('ExperienceButton')"
+            onclick="showHide('Experience'); hideTrueFalse(); activeButton('ExperienceButton')">Experience</button></li>
+        <li><button class="nav-item" id="EducationButton" onmouseenter="mouseOver('EducationButton')"
+            onclick="showHide('Education'); hideTrueFalse(); activeButton('EducationButton')">Education</button></li>
+        <li><button class="nav-item" id="PortfolioButton" onmouseenter="mouseOver('PortfolioButton')"
+            onclick="showHide('Portfolio'); hideTrueFalse(); activeButton('PortfolioButton')">Portfolio</button></li>
+        <li><button class="nav-item" id="ProjectsButton" onmouseenter="mouseOver('ProjectsButton')"
+            onclick="showHide('Projects'); showHide('app'); hideTrueFalse(); activeButton('ProjectsButton')">Projects</button></li>
+        <li><button class="nav-item" id="TriviaButton" onmouseenter="mouseOver('TriviaButton')"
+            onclick="showHide('Trivia'); showHide('Question'); showTrueFalse(); activeButton('TriviaButton')">Trivia</button></li>
+      </ul>
+    </aside>
+
+    <footer class="foot">
+
+    </footer>
+  </div>
 </body>
+
+</html>
