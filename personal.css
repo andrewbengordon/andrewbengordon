@@ -27,6 +27,10 @@ body {
   margin: 0;
 }
 
+aside {
+  display: block;
+}
+
 aside ul {
   list-style-type: none;
   margin: 0;
@@ -207,6 +211,9 @@ button {
       "aside main"
       "foot foot";
   }
+  aside {
+    display: flex;
+  }
 
   main {
     text-align: left;
@@ -218,6 +225,9 @@ button {
   
   h3 {
     font-size: 3vw;
+  }
+  aside {
+    display: block;
   }
 
   #Portfolio img {

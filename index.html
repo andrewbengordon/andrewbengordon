@@ -19,11 +19,11 @@
 </head>
 
 <body>
-  <div class="topnav" id="myTopnav">
-    <a href="mailto: andrewbengordon@gmail.com">Contact Me</a>
-    <a href="https://www.redbubble.com/people/andrewbengordon/shop">Shop</a>
-    <a href="https://www.soundcloud.com/demomusic801">SoundCloud</a>
-    <a href="https://www.twitch.tv/demomusic801">Twitch</a>
+  <div class="topnav" id="myTopnav" role="navigation">
+    <a href="mailto: andrewbengordon@gmail.com" role="link">Contact Me</a>
+    <a href="https://www.redbubble.com/people/andrewbengordon/shop" role="link">Shop</a>
+    <a href="https://www.soundcloud.com/demomusic801" role="link">SoundCloud</a>
+    <a href="https://www.twitch.tv/demomusic801" role="link">Twitch</a>
     <a href="javascript:void(0);" class="icon" onclick="navbar()">
       <i class="fa fa-bars"></i>
     </a>
@@ -31,13 +31,13 @@
 
   <div id="container"></div>
     <div class="title">
-      <img src="images/self.jpg" alt="a photo of me">
-      <h2>Drew Gordon</h2>
+      <img src="images/self.jpg" alt="a photo of me" role="img">
+      <h2 role="heading">Drew Gordon</h2>
       <h3>Engineer, Developer, Artist</h3>
     </div>
 
     <div id="container">
-    <main class="main">
+    <main class="main" role="main">
       <p id="AboutMe">
         My name is Drew. I am a student currently attending Snow College. My major is Software Engineering
         with an emphasis in web development. I enjoy skiing, skateboarding, mountain biking, and gaming in
@@ -80,12 +80,12 @@
         I have found these subjects to be quite interesting and I look forward to studying them further.
       </p>
       <p id="Portfolio">
-        <img src="/images/badger.png" alt="modified badger logo">
-        <img src="images/circuit.jpg" alt= "a tree made of circuits">
-        <img src="images/ho99o9.jpg" alt= "a collage i made for a band">
-        <img src="images/mountains.jpg" alt= "stylized mountains">
-        <img src="images/outrun.jpg" alt= "80s trees and gradient">
-        <img src="images/yeezus.jpg" alt="stylized photo of kanye west">
+        <img src="/images/badger.png" alt="modified badger logo" role="img">
+        <img src="images/circuit.jpg" alt= "a tree made of circuits" role="img">
+        <img src="images/ho99o9.jpg" alt= "a collage i made for a band" role="img">
+        <img src="images/mountains.jpg" alt= "stylized mountains" role="img">
+        <img src="images/outrun.jpg" alt= "80s trees and gradient" role="img">
+        <img src="images/yeezus.jpg" alt="stylized photo of kanye west" role="img">
       </p>
 
       <p id = "Projects">
@@ -128,18 +128,12 @@
 
     <aside class="aside">
       <ul>
-        <li><button class="nav-item" id="AboutMeButton" onmouseenter="mouseOver('AboutMeButton')"
-            onclick="showHide('AboutMe'); hideTrueFalse(); activeButton('AboutMeButton');">About Me</button></li>
-        <li><button class="nav-item" id="ExperienceButton" onmouseenter="mouseOver('ExperienceButton')"
-            onclick="showHide('Experience'); hideTrueFalse(); activeButton('ExperienceButton')">Experience</button></li>
-        <li><button class="nav-item" id="EducationButton" onmouseenter="mouseOver('EducationButton')"
-            onclick="showHide('Education'); hideTrueFalse(); activeButton('EducationButton')">Education</button></li>
-        <li><button class="nav-item" id="PortfolioButton" onmouseenter="mouseOver('PortfolioButton')"
-            onclick="showHide('Portfolio'); hideTrueFalse(); activeButton('PortfolioButton')">Portfolio</button></li>
-        <li><button class="nav-item" id="ProjectsButton" onmouseenter="mouseOver('ProjectsButton')"
-            onclick="showHide('Projects'); showHide('app'); hideTrueFalse(); activeButton('ProjectsButton')">Projects</button></li>
-        <li><button class="nav-item" id="TriviaButton" onmouseenter="mouseOver('TriviaButton')"
-            onclick="showHide('Trivia'); showHide('Question'); showTrueFalse(); activeButton('TriviaButton')">Trivia</button></li>
+        <li><button class="nav-item" id="AboutMeButton" onclick="showHide('AboutMe'); hideTrueFalse(); activeButton('AboutMeButton');">About Me</button></li>
+        <li><button class="nav-item" id="ExperienceButton"onclick="showHide('Experience'); hideTrueFalse(); activeButton('ExperienceButton')">Experience</button></li>
+        <li><button class="nav-item" id="EducationButton" onclick="showHide('Education'); hideTrueFalse(); activeButton('EducationButton')">Education</button></li>
+        <li><button class="nav-item" id="PortfolioButton" onclick="showHide('Portfolio'); hideTrueFalse(); activeButton('PortfolioButton')">Portfolio</button></li>
+        <li><button class="nav-item" id="ProjectsButton" onclick="showHide('Projects'); showHide('app'); hideTrueFalse(); activeButton('ProjectsButton')">Projects</button></li>
+        <li><button class="nav-item" id="TriviaButton" onclick="showHide('Trivia'); showHide('Question'); showTrueFalse(); activeButton('TriviaButton')">Trivia</button></li>
       </ul>
     </aside>
 
