@@ -132,6 +132,10 @@ button {
   border: none;
 }
 
+.custom {
+  width: 200px !important;
+}
+
 .topnav {
   background-color: #333;
   overflow: hidden;

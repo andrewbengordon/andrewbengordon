@@ -41,7 +41,8 @@
       <p id="AboutMe">
         My name is Drew. I am a student currently attending Snow College. My major is Software Engineering
         with an emphasis in web development. I enjoy skiing, skateboarding, mountain biking, and gaming in
-        my free time. I like being outside just as much as I like being inside.
+        my free time. I also do a fair amount of digitial artwork. Some of this artwork can be found on the
+        portfolio section of this page.
       </p>
       <p id="Experience">
         My experience is mostly projects that I have worked on inside and outside of school. I currently work
@@ -62,7 +63,7 @@
         <br>
         &#8226;&nbspMIPS Assembly
         <br><br>
-        Design Languages:
+        Other Languages:
         <br><br>
         &#8226;&nbspHTML
         <br>
@@ -104,9 +105,9 @@
               <div class="w-100"></div>
               <input class="col-sm-2 m-2" :placeholder="placeholder" v-model="skier"/>
               <div class="w-100"></div>
-              <button v-if="(selected == 1)" type="button" class="col-sm-2 col-1 btn btn-primary btn-lg" v-on:click="begSkiSize()">Calculate</button>
-              <button v-if="(selected == 2)" type="button" class="col-sm-2 col-1 btn btn-primary btn-lg" v-on:click="intSkiSize()">Calculate</button>
-              <button v-if="(selected == 3)" type="button" class="col-sm-2 col-1 btn btn-primary btn-lg" v-on:click="advSkiSize()">Calculate</button>
+              <button v-if="(selected == 1)" type="button" class="btn btn-primary btn-lg custom" v-on:click="begSkiSize()">Calculate</button>
+              <button v-if="(selected == 2)" type="button" class="btn btn-primary btn-lg custom" v-on:click="intSkiSize()">Calculate</button>
+              <button v-if="(selected == 3)" type="button" class="btn btn-primary btn-lg custom" v-on:click="advSkiSize()">Calculate</button>
             </div>
             <div class="row"></div>
             <div class="row" id="output">
